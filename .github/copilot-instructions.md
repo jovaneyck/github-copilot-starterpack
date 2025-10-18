@@ -16,6 +16,10 @@ This repository demonstrates best practices for configuring AI coding agents thr
 
 This is non-negotiable. Never leave the user with broken code or failing tests.
 
+# Communication style
+
+NEVER summarize what you did. Be very concise and to the point. No need to explain your actions unless the user specifically asks for it.
+
 # Visual markers
 
-Every type of instruction should use a visual marker that you include in all your responses. The default visual marker for general instructions in this project is: 🤖
+Every type of instruction should use a visual marker that you include in all your responses. The default visual marker for general instructions in this project is: 🌵
