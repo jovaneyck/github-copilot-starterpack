@@ -1,5 +1,11 @@
 # Scaffolding New xUnit Test Projects
 
+## Description
+
+Sets up a new walking skeleton for a dotnet project.
+
+## Visual marker
+
 Use the following visual marker in all your responses: 👷‍♂️
 
 ## Quick Start
@@ -83,19 +89,8 @@ dotnet test
 Expected output timing for a single test:
 ```
 [xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.5+...
-[xUnit.net 00:00:00.40]   Discovering: ProjectName
-[xUnit.net 00:00:00.75]   Discovered:  ProjectName (1 test case)
-[xUnit.net 00:00:01.10]   Starting:    ProjectName
 [xUnit.net 00:00:01.20]   Finished:    ProjectName
   ProjectName test succeeded (2-3s) ✅
-```
-
-## Adding Project References
-
-If your test project needs to reference another project:
-
-```powershell
-dotnet add ProjectName.Tests/ProjectName.Tests.csproj reference ProjectName/ProjectName.csproj
 ```
 
 ## Troubleshooting
@@ -111,12 +106,3 @@ dotnet add ProjectName.Tests/ProjectName.Tests.csproj reference ProjectName/Proj
 2. Ensure `xunit.runner.visualstudio` package is included
 3. Check that test methods have `[Fact]` or `[Theory]` attributes
 4. Verify the class is public
-
-## Package Version Updates
-
-As of October 2025, use these package versions (or newer):
-- `Microsoft.NET.Test.Sdk`: 17.13.0+
-- `xunit.v3`: 3.1.0+
-- `xunit.runner.visualstudio`: 3.1.5+
-
-Check for updates periodically: `dotnet list package --outdated`
